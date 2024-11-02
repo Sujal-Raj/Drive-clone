@@ -9,18 +9,18 @@
 <body>
     <div class="main h-screen flex items-center justify-center">
         <div class=" bg-white border-2 border-zinc-900 inline-block w-[30%] p-5 rounded-lg">
-            <form action="">
+            <form action="/user/register" method="post">
                 <div class="flex flex-col">
-                    <label class=" for="name">Username:</label>
-                    <input class="border-2 border-zinc-900 p-2" type="text" id="name" placeholder="Enter your name">
+                    <label for="name">Username:</label>
+                    <input class="border-2 border-zinc-900 p-2" type="text" name="username" id="name" placeholder="Enter your name">
                 </div>
                 <div class="flex flex-col">
                     <label for="email">Email:</label>
-                    <input class="border-2 border-zinc-900 p-2" type="email" name="" id="email" placeholder="Enter your email">
+                    <input class="border-2 border-zinc-900 p-2" type="email"  name="email" id="email" placeholder="Enter your email">
                 </div>
                 <div class="flex flex-col">
                     <label for="password">Password:</label>
-                    <input class="border-2 border-zinc-900 p-2" type="password" name="" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+                    <input class="border-2 border-zinc-900 p-2" type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
                 </div>
                 <div class="mt-5">
                     <button class=" p-2 bg-[#85bd76] text-white w-[100%] text-xl font-bold">Submit</button>
