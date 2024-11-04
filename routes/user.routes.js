@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
+const userModel = require("../models/user.model");
 
 router.use(express.json());
 router.use(express.urlencoded({extended:true}));
@@ -28,9 +29,7 @@ router.post("/register",
         })
     }
 
-    // console.log(req.body);
-    // res.send("submitted");
-    // console.log()
+    
 })
 
 module.exports = router
